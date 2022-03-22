@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+  --very-dark-blue: hsl(216, 12%, 8%);   
+  --dark-blue: hsl(213, 19%, 14%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --light-grey: hsl(217, 12%, 63%);
+  --white:  hsl(0, 0%, 100%);
+  --primary-orange: hsl(25, 97%, 53%);
+  --f-size: 15px;
+  --f-family:  'Overpass', sans-serif;
+}
+
+*,*::before,*::after,html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+.center{
+    text-align: center;
+}
+
+.small-marging{
+    margin-bottom: 8px;
+}
+
+.medium-marging{
+    margin-bottom: 16px;
+}
+
+
+.attribution{
+    text-align: center;
+    color: white;
+}
+
+.large-marging{
+    margin-bottom: 32px;
+}
+
+body{
+    font-family: var(--f-family);
+    background-color: var(--very-dark-blue);
+}
+
+.main-flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-flexbox__card{
+    width: 25%;
+    background: var(--dark-blue);
+    border-radius: 6%;
+    padding: 24px;
+    font-size: var(--f-size);
+}
+
+.card__circle{
+    width: 45px;
+    height: 45px;
+    background-color: hsl(213, 19%, 20%);
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 15px;
+    color: var(--white);
+}
+
+.card__circle--score{
+    cursor: pointer;
+}
+
+.card__circle--score:hover{
+    background-color: var(--primary-orange);
+}
+
+
+.card__header{
+    color: var(--white);
+}
+
+.card__paragraph{
+    color: var(--medium-grey);
+    line-height: 23px;
+}
+
+.card__scores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.submit{
+    display: inline-block;
+    background-color: var(--primary-orange);
+    width: 100%;
+    border: none;
+    border-radius: 24px;
+    height: 40px;
+    font-family: var(--f-family);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.submit:hover{
+    background-color: var(--white);
+    color: var(--primary-orange);
+}
+
+.click{
+    background-color: var(--light-grey);
+}
+
+.selection{
+    color: var(--primary-orange);
+    background-color: hsl(213, 19%, 20%);
+    height: 40px;
+    border-radius: 20px;
+    padding-top: 12px;
+    display: inline-block;
+    width: 100%;
+}
