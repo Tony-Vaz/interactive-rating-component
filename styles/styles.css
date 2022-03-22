@@ -17,12 +17,26 @@
     margin: 0;
 }
 
+.hidden{
+    display: none;
+}
+
+.center{
+    text-align: center;
+}
+
 .small-marging{
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .medium-marging{
     margin-bottom: 16px;
+}
+
+
+.attribution{
+    text-align: center;
+    color: white;
 }
 
 .large-marging{
@@ -42,11 +56,10 @@ body{
 }
 
 .main-flexbox__card{
-    height: 52%;
     width: 25%;
     background: var(--dark-blue);
     border-radius: 6%;
-    padding: 32px;
+    padding: 24px;
     font-size: var(--f-size);
 }
 
@@ -107,4 +120,14 @@ body{
 
 .click{
     background-color: var(--light-grey);
+}
+
+.selection{
+    color: var(--primary-orange);
+    background-color: hsl(213, 19%, 20%);
+    height: 40px;
+    border-radius: 20px;
+    padding-top: 12px;
+    display: inline-block;
+    width: 100%;
 }

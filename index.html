@@ -16,22 +16,33 @@
 <body>
   <div class="main-flexbox">
     <div class="main-flexbox__card">
-      <div class="card__circle large-marging">
-        <img  src="./images/icon-star.svg" alt="star-icon">
+      <div class="main">
+        <div class="card__circle large-marging">
+          <img  src="./images/icon-star.svg" alt="star-icon">
+        </div>
+        <h2 class="card__header medium-marging"> How did we do?</h2>
+        <p class="card__paragraph medium-marging">
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+        <div class="card__scores large-marging">
+          <div class="card__circle card__circle--score">1</div>
+          <div class="card__circle card__circle--score">2</div>
+          <div class="card__circle card__circle--score">3</div>
+          <div class="card__circle card__circle--score">4</div>
+          <div class="card__circle card__circle--score">5</div>
+        </div>
+        <input class="submit small-marging" type="submit" value="SUBMIT">
       </div>
-      <h2 class="card__header medium-marging"> How did we do?</h2>
-      <p class="card__paragraph medium-marging">
-        Please let us know how we did with your support request. All feedback is appreciated
-        to help us improve our offering!
-      </p>
-      <div class="card__scores medium-marging">
-        <div class="card__circle card__circle--score">1</div>
-        <div class="card__circle card__circle--score">2</div>
-        <div class="card__circle card__circle--score">3</div>
-        <div class="card__circle card__circle--score">4</div>
-        <div class="card__circle card__circle--score">5</div>
+      <div class="thanks hidden">
+        <div class="center large-marging">
+          <img src="./images/illustration-thank-you.svg" alt="thank you">
+        </div>
+        <p class="selection center large-marging">You selected n out of 5</p>
+        <h2 class="card__header center medium-marging">Thank you!</h2>
+        <p class="card__paragraph center">We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
       </div>
-      <input class="submit" type="submit" value="SUBMIT">
     </div>
   </div>
 
@@ -40,13 +51,12 @@
 
   <!-- Thank you state start -->
 
-  You selected
-  <!-- Add rating here --> out of 5
+  
+  <!-- Add rating here --> 
 
-  Thank you!
 
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch!
+
+  
 
   <!-- Thank you state end -->
 
