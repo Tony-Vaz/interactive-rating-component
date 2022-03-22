@@ -3,9 +3,11 @@ const cardScores = document.querySelector('.card__scores');
 const mainSection = document.querySelector('.main');
 const thanksSection = document.querySelector('.thanks');
 let isScoredSelected = false;
-
+const number = document.querySelector('.number');
+let currentElement = null;
 
 cardScores.addEventListener('click', (e) => {
+    currentElement = e.target;
     console.log(e.target)
 
     //Obtener classes del elemento clickeado
@@ -41,7 +43,10 @@ submitButton.addEventListener('click', (e) =>{
         console.log('Is working')
         mainSection.classList.add('hidden')
         thanksSection.classList.remove('hidden')
-    }
+        number.textContent = currentElement.textContent;
 
-    console.log('not working')
+    }
+    else
+        console.log('not working')
+    
 });
